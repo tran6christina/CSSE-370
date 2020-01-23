@@ -1,6 +1,4 @@
-Phase #2
-
-All previous tests pass OR modified tests/dropped test
+Testing Log Phase #1
 
 Test Cases:
 1.1
