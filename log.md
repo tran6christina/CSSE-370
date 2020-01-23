@@ -1,8 +1,9 @@
 Testing Log Phase #1
 
 Test Cases:
-1.1
-1.2
-1.3
+1.1 Two html pages (index.html and another page)
+1.2 The pages should link to each other
+1.3 Header tags on each page (h1, h2, etc.)
+1.4 An image on each page
+1.5 At least 3 external links
 
-Notes:
