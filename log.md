@@ -7,3 +7,19 @@ Test Cases:
 1.4 An image on each page
 1.5 At least 3 external links
 
+Testing Log Phase #2
+
+Test Cases:
+2.1 Separate file
+2.2 10 Selectors
+  - Tag Name
+  - 10
+  - Class
+  - Pseudo-selectors
+  - Pseudo-elements
+  - Combination
+2.3 Effects
+  - Side Bar
+  - Display focus
+  - Change on hover
+
