@@ -1,1 +1,42 @@
-
+p {
+  font-family: Arial;
+}
+h1 {
+  color: maroon;
+}
+.title {
+  color: white;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.publish-time {
+  color: gray;
+}
+a:hover {
+  background-color: orange;
+}
+h1 {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+}
+h1:hover {
+  background-color: orange;
+}
+a {
+  color: blue;
+}
+#blog-title {
+  font-family: Georgia;
+}
+p::first-line {
+  color: orange;
+  font-variant: small-caps;
+}
+.description h5 {
+  color: teal;
+}
+li, p {
+  font-family: Georgia;
+}
