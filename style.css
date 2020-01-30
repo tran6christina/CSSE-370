@@ -40,3 +40,8 @@ p::first-line {
 li, p {
   font-family: Georgia;
 }
+#header {
+background: url(VBBlogHeader.jpg) no-repeat;
+width: 980px;
+height: 100px;
+}
