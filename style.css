@@ -42,6 +42,11 @@ li, p {
 }
 #header {
 background: url(VBBlogHeader.png) no-repeat;
-width: 980px;
-height: 100px;
+width: 555px;
+height: 245px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
