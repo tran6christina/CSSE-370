@@ -47,3 +47,52 @@ height: 230px;
   margin-left: auto;
   margin-right: auto;
 }
+body {
+  background-color: lightgray;
+}
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: darkblue;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+li button.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  border: none;
+  font-size: 16px;
+  font-family: Georgia;
+  color: black;
+  display: block;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown-container {
+  font-family: cursive;
+}
