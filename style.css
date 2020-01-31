@@ -1,9 +1,6 @@
 p {
   font-family: Arial;
 }
-h1 {
-  color: maroon;
-}
 .title {
   color: white;
 }
@@ -11,13 +8,13 @@ h1 {
   text-transform: uppercase;
 }
 .publish-time {
-  color: gray;
+  color: black;
 }
 a:hover {
   background-color: orange;
 }
 h1 {
-  background-color: blue;
+  background-color: darkblue;
   padding: 20px;
   text-align: center;
 }
@@ -34,8 +31,8 @@ p::first-line {
   color: orange;
   font-variant: small-caps;
 }
-.description h5 {
-  color: teal;
+h2.navigation {
+  font-family: cursive;
 }
 li, p {
   font-family: Georgia;
@@ -43,7 +40,7 @@ li, p {
 #header {
 background: url(VBBlogHeader.png) no-repeat;
 width: 555px;
-height: 245px;
+height: 230px;
 }
 .center {
   display: block;
