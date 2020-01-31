@@ -1,58 +1,56 @@
+/* paragraph font */
 p {
   font-family: Arial;
 }
+/* h1 title color */
 .title {
   color: white;
+  font-family: Georgia;
 }
-.uppercase {
-  text-transform: uppercase;
-}
+/* publish time color */
 .publish-time {
   color: black;
 }
-a:hover {
-  background-color: orange;
-}
+/* h1 block header color & alignment */
 h1 {
   background-color: darkblue;
   padding: 20px;
   text-align: center;
 }
+/* h1 hover to orange */
 h1:hover {
   background-color: orange;
 }
-a {
-  color: blue;
-}
-#blog-title {
-  font-family: Georgia;
-}
+/* paragraph first line color */
 p::first-line {
   color: orange;
   font-variant: small-caps;
 }
+/* h2 navigation to cursive */
 h2.navigation {
   font-family: cursive;
 }
+/* li and p to Georgia font */
 li, p {
   font-family: Georgia;
 }
+/* id header image */
 #header {
 background: url(VBBlogHeader.png) no-repeat;
 width: 555px;
 height: 230px;
 }
+/* centering the header */
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/* background color to lightgray */
 body {
   background-color: lightgray;
 }
-body {
-  margin: 0;
-}
+/* sidebar sizing */
 ul {
   list-style-type: none;
   margin: 0;
@@ -63,23 +61,24 @@ ul {
   height: 100%;
   overflow: auto;
 }
-
+/* sidebar options display */
 li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
-
+/* sidebar active design */
 li a.active {
   background-color: darkblue;
   color: white;
 }
-
+/* sidebar hovering color */
 li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
+/* "dropdown" positioning */
 li button.dropdown-btn {
   padding: 6px 8px 6px 16px;
   border: none;
@@ -93,6 +92,12 @@ li button.dropdown-btn {
   cursor: pointer;
   outline: none;
 }
+/* "dropdown" content font style */
 .dropdown-container {
   font-family: cursive;
+}
+/* 2page image header */
+img {
+  max-width: 100%;
+  height: auto;
 }
