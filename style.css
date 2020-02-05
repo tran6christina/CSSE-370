@@ -34,13 +34,6 @@ h2.navigation {
 li, p {
   font-family: Georgia;
 }
-/* id header image 
-#header {
-background: url(VBBlogHeader.png) no-repeat;
-width: 555px;
-height: 230px;
-}
-*/
 /* centering the header */
 .center {
   display: block;
