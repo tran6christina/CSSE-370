@@ -1,3 +1,13 @@
+Testing Log Phase #4
+
+Test Cases:
+4.1 External JavaScript file (loaded by index.html file)
+4.2 Element that creates a new, visible element when clicked
+4.3 New element should:
+  - have style applied from your css file
+  - deletes itself when clicked
+4.4 Element that contains text that changes when the mouse moves over it (based on mouse location)
+
 Testing Log Phase #3
 
 Test Cases:
