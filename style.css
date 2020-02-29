@@ -97,6 +97,14 @@ img {
   height: auto;
 }
 
+.nonactive {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
