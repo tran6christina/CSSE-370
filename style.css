@@ -9,11 +9,6 @@ p {
   font-family: Georgia;
 }
 
-/* publish time color */
-.publish-time {
-  color: black;
-}
-
 /* h1 block header color & alignment */
 h1 {
   background-color: darkblue;
@@ -21,20 +16,10 @@ h1 {
   text-align: center;
 }
 
-/* h1 hover to orange */
-h1:hover {
-  background-color: orange;
-}
-
 /* paragraph first line color */
 p::first-line {
   color: orange;
   font-variant: small-caps;
-}
-
-/* h2 navigation to cursive */
-h2.navigation {
-  font-family: cursive;
 }
 
 /* li and p to Georgia font */
@@ -53,72 +38,65 @@ li, p {
 body {
   background-color: lightgray;
 }
-
 body {
-  margin: auto;
+  margin: 0;
 }
 
-ul.sidenav {
-  list-style-type: none;
+.sidenav {
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 200px;
   background-color: white;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 
-ul.sidenav li a {
+.sidenav a {
   display: block;
   color: black;
-  padding: 8px 16px;
+  padding: 16px;
   text-decoration: none;
+  font-family: Georgia;
 }
  
-ul.sidenav li a.active {
+.sidenav a.active {
   background-color: darkblue;
   color: white;
 }
 
-ul.sidenav li a:hover:not(.active) {
+.sidenav a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
 div.content {
-  margin: auto;
+  margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
 
-@media screen and (max-width: 1024px){
-  ul.sidenav {
+@media screen and (max-width: 700px) {
+  .sidenav {
     width: 100%;
     height: auto;
     position: relative;
   }
-  
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-  }
-  
-  div.content {
-    margin: auto;
-  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
 }
 
-@media screen and (max-width: 629px) {
-  ul.sidenav li a {
+@media screen and (max-width: 400px) {
+  .sidenav a {
     text-align: center;
     float: none;
   }
 }
 img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
+
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
@@ -128,13 +106,16 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: Georgia;
+  padding: 15px 32px;
+  font-size: 16px;
 }
 
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
   width: 160px;
-  background-color: #555;
+  background-color: orange;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -144,6 +125,7 @@ img {
   bottom: 125%;
   left: 50%;
   margin-left: -80px;
+  font-family: Georgia;
 }
 
 /* Popup arrow */
@@ -173,4 +155,33 @@ img {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+.centerPop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: cornsilk;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: aliceblue;
+  }
+}
+
+#box {
+text-align: center;
+width: 150px;
+height: 80px;
+margin-left: 20px;
+margin-top: 20px;
+padding: 15px;
+border: 5px solid darkblue;
 }
