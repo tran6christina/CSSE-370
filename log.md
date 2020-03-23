@@ -1,11 +1,16 @@
+Testing Log Phase #5
+
+Test Cases:
+5.1 Fix accessibility problems (identified by ANDI tool) for both pages
+
 Testing Log Phase #4
 
 Test Cases:
 4.1 External JavaScript file (loaded by index.html file)
 4.2 Element that creates a new, visible element when clicked
 4.3 New element should:
-  - have style applied from your css file
-  - deletes itself when clicked
+- have style applied from your css file
+- deletes itself when clicked
 4.4 Element that contains text that changes when the mouse moves over it (based on mouse location)
 
 Testing Log Phase #3
@@ -20,16 +25,16 @@ Testing Log Phase #2
 Test Cases:
 2.1 Separate file
 2.2 10 Selectors
-  - Tag Name
-  - 10
-  - Class
-  - Pseudo-selectors
-  - Pseudo-elements
-  - Combination
+- Tag Name
+- 10
+- Class
+- Pseudo-selectors
+- Pseudo-elements
+- Combination
 2.3 Effects
-  - Side Bar
-  - Display focus
-  - Change on hover
+- Side Bar
+- Display focus
+- Change on hover
 
 Testing Log Phase #1
 
