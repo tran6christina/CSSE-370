@@ -1,3 +1,11 @@
+Testing Log Phase #6
+
+Test Cases:
+6.1 Information is pulled through an API
+6.2 Present to the user some choice based on that information.
+6.3 Based on the user choice, request additional information through an API.
+6.4 Present something based on the additional information.
+
 Testing Log Phase #5
 
 Test Cases:
