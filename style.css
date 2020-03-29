@@ -1,195 +1,243 @@
 /* paragraph font */
 p {
-  font-family: Arial;
+    font-family: Arial;
 }
-
+  
 /* h1 title color */
 .title {
-  color: white;
-  font-family: Georgia;
+    color: white;
+    font-family: Georgia;
 }
-
+  
 /* h1 block header color & alignment */
 h1 {
-  background-color: darkblue;
-  padding: 20px;
-  text-align: center;
+    background-color: darkblue;
+    padding: 20px;
+    text-align: center;
 }
-
+  
 /* paragraph first line color */
 p::first-line {
-  color: orange;
-  font-variant: small-caps;
+    color: orange;
+   font-variant: small-caps;
 }
-
+  
 /* li and p to Georgia font */
 li, p {
-  font-family: Georgia;
-}
-
+    font-family: Georgia;
+  }
+  
 /* centering the header */
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+  
 /* background color to lightgray */
 body {
-  background-color: lightgray;
+    background-color: lightgray;
 }
 body {
-  margin: 0;
+    margin: 0;
 }
-
+  
 .sidenav {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: white;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
-
+  
 .sidenav a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-  font-family: Georgia;
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-family: Georgia;
 }
- 
+   
 .sidenav a.active {
-  background-color: darkblue;
-  color: white;
+    background-color: darkblue;
+    color: white;
 }
-
+  
 .sidenav a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: white;
 }
-
+  
 div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
 }
-
+  
 @media screen and (max-width: 700px) {
-  .sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidenav a {float: left;}
-  div.content {margin-left: 0;}
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+    div.content {margin-left: 0;}
 }
-
+  
 @media screen and (max-width: 400px) {
-  .sidenav a {
+    .sidenav a {
+      text-align: center;
+      float: none;
+    }
+  }
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .nonactive {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Popup container - can be anything you want */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Georgia;
+    padding: 15px 32px;
+    font-size: 16px;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: orange;
+    color: #fff;
     text-align: center;
-    float: none;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-family: Georgia;
   }
-}
-img {
-  max-width: 75%;
-  height: auto;
-}
-
-.nonactive {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: Georgia;
-  padding: 15px 32px;
-  font-size: 16px;
-}
-
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: orange;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-  font-family: Georgia;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-.centerPop {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-  body {
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .centerPop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    body {
     background-color: cornsilk;
+    }
   }
-}
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  body {
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
     background-color: aliceblue;
+    }
   }
-}
+  
+  #box {
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 5px solid darkblue;
+  }
 
-#box {
-text-align: center;
-width: 150px;
-height: 80px;
-margin-left: 20px;
-margin-top: 20px;
-padding: 15px;
-border: 5px solid darkblue;
-}
+  .input {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    height: 50px;
+    width: 400px;
+    background: #e7e7e7;
+    font-family: "Nunito",sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+  }
+
+  input[type="submit"] {
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-family: "Nunito",sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .display {
+      text-align: center;
+  }
+
+  .column {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      padding-top: 25px;
+  }
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+
+  }
+
+  img {
+      padding-top: 10px;
+  }
