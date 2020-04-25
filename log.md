@@ -1,3 +1,8 @@
+Testing Phase #7
+
+Test Cases:
+7.1 Run website through the OWASP Zap tool and submit a screenshot showing controllable risks that have been addressed (not server-side vulnerabilities).
+
 Testing Log Phase #6
 
 Test Cases:
