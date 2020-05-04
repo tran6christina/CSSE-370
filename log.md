@@ -1,3 +1,12 @@
+Testing Phase #8
+
+Test Cases:
+8.1 Add a React component to webpage that "reacts" to user input by displaying changes.
+- Install and run webpack locally,
+- Build (compile into) a JavaScript file which will include a React component,
+- Add the file to your project,
+- Connect it logically to project.
+
 Testing Phase #7
 
 Test Cases:
